@@ -15,10 +15,12 @@
       <div class="product-display">
         <div class="product-container">
           <div class="product-image">
-            <!-- image goes here -->
+            <img v-bind:src="image">
           </div>
           <div class="product-info">
             <h1>{{ product }}</h1>
+            <!-- solution -->
+            <h2>anchor : <a :href="anchorUrl" target="_blank">{{ anchor }}</a></h2>
           </div>
         </div>
       </div>
